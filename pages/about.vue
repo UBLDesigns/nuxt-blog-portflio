@@ -1,9 +1,6 @@
 <template>
     <div>
-        about
-    </div>
-    <div>
-        <button @click="changeLayout">Change Layout</button>
+        <h1>Welcome to the about us page</h1>
     </div>
 </template>
 

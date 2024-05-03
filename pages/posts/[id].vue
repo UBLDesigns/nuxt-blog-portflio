@@ -1,6 +1,6 @@
 <template>
     <div>
-        test {{ id }}
+        Blog Post ID {{ id }}
     </div>
 </template>
 

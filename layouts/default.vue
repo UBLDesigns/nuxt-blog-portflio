@@ -4,7 +4,7 @@
         <main class="py-8 px-8 md:px-0">
             <slot />
         </main>
-        <footer></footer>
+        <Footer />
     </div>
 </template>
 

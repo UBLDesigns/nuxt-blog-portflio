@@ -5,10 +5,20 @@
         </div>
         <nav>
             <ul class="flex gap-4 text-lg text-white">
-                <li><NuxtLink to="/" activeClass="text-lime-500" class="hover:text-lime-500">Home</NuxtLink></li>
-                <li><NuxtLink to="/about" activeClass="text-lime-500" class="hover:text-lime-500">About</NuxtLink></li>
-                <li><NuxtLink to="/posts" activeClass="text-lime-500" class="hover:text-lime-500">Blog</NuxtLink></li>
+                <li><NuxtLink to="/" activeClass="link-active" class="link">Home</NuxtLink></li>
+                <li><NuxtLink to="/about" activeClass="link-active" class="link">About</NuxtLink></li>
+                <li><NuxtLink to="/posts" activeClass="link-active" class="link">Blog</NuxtLink></li>
             </ul>
         </nav>
     </header>
 </template>
+
+<style scoped>
+.link{
+    @apply text-lg text-white hover:text-lime-500;
+}
+
+.link-active{
+    @apply text-lg text-lime-500 hover:text-lime-800;
+}
+</style>
