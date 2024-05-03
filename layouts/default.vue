@@ -6,6 +6,9 @@
         </main>
         <Footer />
     </div>
+    <ClientOnly>
+        <ColourChanger />
+    </ClientOnly>
 </template>
 
 <script setup>
@@ -32,6 +35,7 @@ useHead({
 <style>
 body{
     font-family: "Inter", sans-serif;
+    @apply bg-gray-50 dark:bg-gray-900
 }
 
 h1,h2,h3,h4,h5,h6,a,button{
