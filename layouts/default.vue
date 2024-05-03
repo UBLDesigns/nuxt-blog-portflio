@@ -1,11 +1,14 @@
 <template>
-    <div class="container max-w-5xl mx-auto mt-8">
+    <div class="container max-w-5xl mx-auto">
         <Header />
-        <main class="py-8 px-8 md:px-0">
+        <main class="py-8 mt-36 px-8 md:px-0">
             <slot />
         </main>
         <Footer />
     </div>
+    <ClientOnly>
+        <ColourChanger />
+    </ClientOnly>
 </template>
 
 <script setup>
@@ -32,6 +35,7 @@ useHead({
 <style>
 body{
     font-family: "Inter", sans-serif;
+    @apply bg-gray-50 dark:bg-gray-900
 }
 
 h1,h2,h3,h4,h5,h6,a,button{

@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-gray-800 p-8 rounded-2xl flex justify-between items-center gap-6">
+    <header class="bg-gray-800 p-8 rounded-2xl flex justify-between items-center gap-6 shadow-2xl fixed top-8 container max-w-5xl mx-auto">
         <div>
             <NuxtLink to="/" class="text-2xl text-lime-500 font-bold uppercase">Nuxt Blog</NuxtLink>
         </div>
@@ -8,6 +8,7 @@
                 <li><NuxtLink to="/" activeClass="link-active" class="link">Home</NuxtLink></li>
                 <li><NuxtLink to="/about" activeClass="link-active" class="link">About</NuxtLink></li>
                 <li><NuxtLink to="/posts" activeClass="link-active" class="link">Blog</NuxtLink></li>
+                <li><NuxtLink to="/projects" activeClass="link-active" class="link">Projects</NuxtLink></li>
             </ul>
         </nav>
     </header>
