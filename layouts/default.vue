@@ -1,7 +1,7 @@
 <template>
-    <div class="container max-w-5xl mx-auto mt-8">
+    <div class="container max-w-5xl mx-auto">
         <Header />
-        <main class="py-8 px-8 md:px-0">
+        <main class="py-8 mt-36 px-8 md:px-0">
             <slot />
         </main>
         <Footer />

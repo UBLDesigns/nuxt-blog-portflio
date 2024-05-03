@@ -4,7 +4,7 @@
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 useSeoMeta({
   title: 'Nuxt Blog Website',
   description: 'Welcome to my first Nuxt Blog App',
