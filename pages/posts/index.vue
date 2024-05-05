@@ -1,11 +1,17 @@
 <template>
-    <nav>
+    <section>
         <ul>
-            <li><NuxtLink to="/posts/2024/vue-introduction">Test Blog ID 2</NuxtLink></li>
+            <li v-for="(post, key) in posts" :key="key">
+                <NuxtLink :to="post._path">{{ post.title }}</NuxtLink>
+                <p>{{ post.description }}</p>
+            </li>
         </ul>
-    </nav>
+    </section>
 </template>
 
 <script setup>
-
+const { data: posts } = await useAsyncData(
+    'blog-list', 
+    () => queryContent('/posts').only(['title', 'description', '_path']).find()
+)
 </script>
