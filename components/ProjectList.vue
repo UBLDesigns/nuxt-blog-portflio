@@ -2,15 +2,15 @@
     <section v-if="pending">Loading...</section>
     <section v-else-if="error">error...</section>
     <section v-else>
-        <article v-for="repo in repos" :key="repo.id" class="border border-gray-200 p-4 rounded-lg my-4 font-mono flex justify-between items-center hover:bg-gray-50">
-            <div>
+        <article v-for="repo in repos" :key="repo.id" class="border border-gray-200 dark:border-gray-600 p-4 rounded-lg my-4 font-mono flex justify-between items-center hover:bg-gray-50 dark:hover:bg-gray-800">
+            <div class="w-10/12">
                 <NuxtLink class="font-semibold font-mono text-[1.2rem]" :to="repo.html_url" target="_blank" no-rel external>{{ repo.name }}</NuxtLink>
                 <p class="text-sm">{{ repo.description }}</p>
                 <ul class="flex gap-2">
                     <li v-for="(topic, key) in repo.topics" :key="key" class="text-xs py-1 px-1.5 rounded-md my-2" :class="topic">{{ topic }}</li>
                 </ul>
             </div>
-            <div class="flex justify-center items-center gap-2">{{ repo.stargazers_count }} &#9733;</div>
+            <div class="flex justify-end items-center gap-2 w-2/12">{{ repo.stargazers_count }} &#9733;</div>
         </article>
     </section>
 </template>
@@ -23,7 +23,7 @@ const repos = data.value.filter(project => project.description).sort((a, b) => b
 
 <style scoped>
 .composition{
-    @apply bg-gray-200;
+    @apply bg-gray-200 text-gray-700;
 }
 .headless{
     @apply bg-gray-600 text-white;

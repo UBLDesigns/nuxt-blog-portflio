@@ -1,26 +1,22 @@
-# Hello There, I'm Piotr
+# Hello There, I'm Robert
 
 ## About me
 
-I'm Piotr, I'm a developer and a Udemy Instructor. I'm 36, living in southern Poland with my wife and 2 golden retrievers. I'm vegan and pro-animal 🥑.
+I'm Robert, I'm a full stack developer. At the time of creating this I am 43 years old, living in England.
 
-## What I teach on Udemy
+## Languages, Frameworks & I know
 
 I teach mostly web development and I have courses on:
 
-- Laravel (PHP framework)
-- Laravel & Vue & Inertia (PHP framework/JavaScript frontend framework)
-- Symfony (PHP framework)
-- NestJS (Node.js framework)
-- Nuxt 3 (JavaScript Full-stack framework)
-
-## What software/hardware do I use?
-
-Here's a list of everyday used software and hardware:
-
-- MacBook Pro 16 2021
-- Rode NT USB microphone
-- VSCode
-- Chrome
-- ScreenFlow (Mac only)
-- Docker
+- PHP
+  - WordPress
+  - Laravel
+- HTML5
+- CSS3
+  - SCSS
+- JavaScript
+  - TypeScript
+  - jQuery
+  - React
+  - Vue Js
+  - Nuxt Js
