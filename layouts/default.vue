@@ -1,7 +1,7 @@
 <template>
-    <div class="relative container max-w-5xl mx-auto dark:text-white">
+    <div class="relative container max-w-5xl px-4 lg:px-0 lg:mx-auto dark:text-white">
         <Header />
-        <main class="py-8 mt-36 px-8 md:px-0">
+        <main class="py-8 mt-4 lg:mt-36 px-2">
             <slot />
         </main>
         <Footer />

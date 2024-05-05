@@ -1,6 +1,7 @@
 ---
 title: "First markdown nuxt post"
 description: "This is the first ever nuxt markdown blog post"
+publishedAt: 2024
 head:
   meta:
     - name: "keywords"
