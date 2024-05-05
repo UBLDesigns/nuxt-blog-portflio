@@ -1,5 +1,5 @@
 <template>
-    <div class="container max-w-5xl mx-auto">
+    <div class="relative container max-w-5xl mx-auto dark:text-white">
         <Header />
         <main class="py-8 mt-36 px-8 md:px-0">
             <slot />
@@ -14,6 +14,11 @@
 <script setup>
 useHead({
     titleTemplate: '%s - Robert Gouveia',
+    meta: [
+      { hid: 'robots', name: 'robots', content: 'index, follow' },
+      { hid: 'author', name: 'author', content: 'Robert Gouveia' },
+      { hid: 'copyright', name: 'copyright', content: '© 2024 Robert Gouveia' },
+    ],
     link: [
         {
             rel: 'preconnect',

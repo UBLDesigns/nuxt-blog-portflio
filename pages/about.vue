@@ -1,19 +1,15 @@
 <template>
-    <div>
-        <h1>Welcome to the about us page</h1>
-    </div>
+    <article class="prose dark:prose-invert">
+        <ContentDoc path="/about" />
+    </article>
 </template>
 
 <script setup>
-/* definePageMeta({
-    layout: 'another',
-});
-
-const changeLayout = () => {
-    setPageLayout('default');
-}; */
-
 useHead({
-    title: 'About'
+    title: 'About',
+    meta: [
+      { hid: 'description', name: 'description', content: 'About Robert Gouveia Description Goes Here' },
+      { hid: 'keywords', name: 'keywords', content: 'robert gouveia, full stack developer, developer' }
+    ],
 });
 </script>
