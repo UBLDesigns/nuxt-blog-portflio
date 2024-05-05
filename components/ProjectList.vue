@@ -6,8 +6,8 @@
             <div class="w-10/12">
                 <NuxtLink class="font-semibold font-mono text-[1.2rem]" :to="repo.html_url" target="_blank" no-rel external>{{ repo.name }}</NuxtLink>
                 <p class="text-sm">{{ repo.description }}</p>
-                <ul class="flex gap-2">
-                    <li v-for="(topic, key) in repo.topics" :key="key" class="text-xs py-1 px-1.5 rounded-md my-2" :class="topic">{{ topic }}</li>
+                <ul class="flex gap-2 flex-wrap">
+                    <li v-for="(topic, key) in repo.topics" :key="key" class="text-xs py-1 px-1.5 rounded-md mt-2" :class="topic">{{ topic }}</li>
                 </ul>
             </div>
             <div class="flex justify-end items-center gap-2 w-2/12">{{ repo.stargazers_count }} &#9733;</div>
