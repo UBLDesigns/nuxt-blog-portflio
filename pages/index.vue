@@ -1,7 +1,10 @@
 <template>
-    <div>
-        <h1>Welcome to the home page</h1>
-    </div>
+    <section>
+      <h1 class="text-4xl font-semibold mb-2 text-center">Welcome to my first Nuxt Project</h1>
+      <h2 class="text-lg font-semibold mb-8 text-center text-lime-500">Developed using Nuxt, Vite &amp; Tailwind</h2>
+      <p class="text-center">The focus is not the design aspect per say, even though it is using tailwind and mobile friendly.</p>
+      <p class="text-center">The focus was on the basic features of Nuxt in general</p>
+    </section>
 </template>
 
 <script setup lang="ts">

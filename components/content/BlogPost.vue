@@ -19,7 +19,11 @@
 <script setup>
 const { data: posts } = await useAsyncData(
     'blog-list', 
-    () => queryContent('/posts').only(['title', 'description', '_path', 'publishedAt']).where({_path: { $ne: '/posts'}}).sort({publishedAt: -1}).find()
+    () => queryContent('/posts')
+            .only(['title', 'description', '_path', 'publishedAt'])
+            .where({_path: { $ne: '/posts'}})
+            .sort({publishedAt: -1})
+            .find()
 )
 </script>
 

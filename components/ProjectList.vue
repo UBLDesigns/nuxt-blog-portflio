@@ -25,13 +25,13 @@ const repos = data.value.filter(project => project.description).sort((a, b) => b
 .composition{
     @apply bg-gray-200 text-gray-700;
 }
-.headless{
+.headless, .api{
     @apply bg-gray-600 text-white;
 }
 .pinia{
     @apply bg-[#a6aa35] text-white;
 }
-.vue3{
+.vue3, .nuxt{
     @apply bg-[#41B883] text-white;
 }
 .vuejs{
@@ -40,16 +40,13 @@ const repos = data.value.filter(project => project.description).sort((a, b) => b
 .tailwind{
     @apply bg-[#0ea5e9] text-white;
 }
-.react{
+.react, .next{
     @apply bg-[#61DBFB] text-white;
 }
 .front-end{
     @apply bg-gray-400 text-white;
 }
-.redux{
-    @apply bg-[#764abc] text-white;
-}
-.redux-toolkit{
+.redux, .redux-toolkit{
     @apply bg-[#764abc] text-white;
 }
 </style>

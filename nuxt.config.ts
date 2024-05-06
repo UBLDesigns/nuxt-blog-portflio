@@ -6,6 +6,12 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@nuxt/content",
   ],
+  app: {
+    pageTransition: {
+      name: 'page',
+      mode: 'out-in'
+    }
+  },
   content: {
     highlight: {
       theme: {
