@@ -1,5 +1,3 @@
-<a href="https://nuxt-md.derbyweb.dev/" target="_blank">DEMO</a>
-
 # Installation Details
 
 ---
