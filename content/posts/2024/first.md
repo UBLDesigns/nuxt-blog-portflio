@@ -55,4 +55,4 @@ Tables:
 </html>
 ```
 
-[Go to the second article](/posts/2024/second)
+[Go to the second article](/posts/2024/vue-introduction)
